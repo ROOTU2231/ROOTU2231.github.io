@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 포트폴리오</title>
+    <title>유근호의 포트폴리오</title>
+    <style>
+        /* 기본 디자인(CSS) 설정 */
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>안녕하세요! 제 포트폴리오 웹사이트입니다.</h1>
-    <p>GitHub Pages 배포 테스트 중입니다.</p>
+
+    <header>
+        <h1>안녕하세요, 유근호입니다.</h1>
+        <p>컴퓨터공학 전공 | 백엔드 및 시스템 프로그래밍에 관심이 많습니다.</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>22학번 복학생으로, 시스템의 동작 원리를 이해하고 데이터를 효율적으로 관리하는 것에 흥미를 느낍니다.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> C, Java</li>
+                <li><strong>Databases:</strong> MongoDB, MySQL</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Linux ls 명령어 시뮬레이션:</strong> C언어를 활용하여 파일 타입 및 inode 번호 출력 기능 구현</li>
+                <li><strong>학생 관리 프로그램:</strong> Java HashMap을 이용한 데이터 입력, 수정, 삭제, 검색 기능 구현</li>
+                <li><strong>게임 데이터 관리 시스템:</strong> MongoDB를 활용한 세이브 파일 및 캐릭터 스탯(JSON) 구조 설계</li>
+            </ul>
+        </section>
+    </div>
+
 </body>
 </html>
