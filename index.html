@@ -1,58 +1,118 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GuenHo's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* 기본 디자인(CSS) 설정 */
+        /* 트렌디한 색상 변수 설정 */
+        :root {
+            --primary-color: #4f46e5; /* 세련된 인디고 포인트 컬러 */
+            --bg-color: #f8fafc;
+            --text-color: #334155;
+            --card-bg: #ffffff;
+        }
+
         body {
-            font-family: 'Malgun Gothic', sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            -webkit-font-smoothing: antialiased;
         }
+        
+        /* 헤더 디자인 */
         header {
-            background-color: #2c3e50;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
             color: white;
             text-align: center;
-            padding: 2rem 0;
+            padding: 4rem 1rem 5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            font-weight: 300;
+        }
+
+        /* 컨텐츠 영역 */
         .container {
-            width: 80%;
-            margin: 20px auto;
+            max-width: 800px;
+            margin: -40px auto 40px; 
+            padding: 0 20px;
+            position: relative;
         }
+
+        /* 각 섹션 카드 디자인 */
         section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: var(--card-bg);
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
+
+        /* 호버 효과 */
+        section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* 소제목 디자인 */
         h2 {
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 10px;
+            color: #1e293b;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 8px;
             margin-top: 0;
+            display: inline-block;
+            margin-bottom: 20px;
         }
+
+        /* 리스트 스타일 커스텀 */
         ul {
-            list-style-type: square;
-            padding-left: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background: #f1f5f9;
+            margin-bottom: 12px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            color: #475569;
+        }
+
+        li strong {
+            color: #0f172a;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>hello my name is Guen Ho Yu</h1>
-        <p>C.E Major | Interested in DB, Embadded System.</p>
+        <h1>Hello, my name is Guen Ho Yu</h1>
+        <p>C.E Major | Interested in DB, Embedded Systems</p>
     </header>
 
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p> 22nd-year student at Daegu University with a strong interest in databases and embedded systems.</p>
+            <p>Class of '22 student at Daegu University with a strong interest in databases and embedded systems.</p>
         </section>
 
         <section id="skills">
