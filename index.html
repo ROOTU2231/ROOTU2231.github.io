@@ -100,6 +100,17 @@
         li strong {
             color: #0f172a;
         }
+
+        /* 수강 과목 정렬을 위한 그리드 레이아웃 추가 */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 12px;
+        }
+
+        .course-grid li {
+            margin-bottom: 0; /* 그리드 내부 여백 최적화 */
+        }
     </style>
 </head>
 <body>
@@ -120,6 +131,19 @@
             <ul>
                 <li><strong>Languages:</strong> C, Java, Python</li>
                 <li><strong>Databases:</strong> MongoDB, MySQL</li>
+            </ul>
+        </section>
+
+        <section id="coursework">
+            <h2>Relevant Coursework</h2>
+            <ul class="course-grid">
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+                <li>Computer Architecture</li>
+                <li>Database Systems</li>
+                <li>System Programming</li>
+                <li>System Software</li>
+                <li>Cloud Computing <strong>(Current)</strong></li>
             </ul>
         </section>
 
